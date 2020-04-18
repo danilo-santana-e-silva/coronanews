@@ -1,0 +1,10 @@
+body{
+    display: inline;
+}
+main{
+    background-color: darkgray;
+}
+aside{
+    background-color: aquamarine;
+    width: 15%;
+}
