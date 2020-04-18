@@ -17,3 +17,7 @@ Além disso, criem um menu de navegação e as páginas respectivas de:
 **Não é preciso ter domínio próprio** e recomendamos o *Netlify* para hospedagem.
 
 Bora lá? Então valendo! Esse desafio é individual, mas incentivamos que vocês troquem links entre si para feedbacks dos colegas <3
+
+
+## Landing Pages
+[![Construindo LANDING PAGES](http://img.youtube.com/vi/t7VdiJClmB4/0.jpg)](http://www.youtube.com/watch?v=t7VdiJClmB4 "Landing Pages que CONVERTEM! Os SEGREDOS de uma Landing Page campeã (2020) 🏆")
