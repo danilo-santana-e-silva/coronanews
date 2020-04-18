@@ -20,4 +20,5 @@ Bora lá? Então valendo! Esse desafio é individual, mas incentivamos que você
 
 
 ## Landing Pages
-[![Construindo LANDING PAGES](http://img.youtube.com/vi/t7VdiJClmB4/0.jpg)](http://www.youtube.com/watch?v=t7VdiJClmB4 "Landing Pages que CONVERTEM! Os SEGREDOS de uma Landing Page campeã (2020) 🏆")
+[![Construindo LANDING PAGES](http://img.youtube.com/vi/t7VdiJClmB4/0.jpg)](http://www.youtube.com/watch?v=t7VdiJClmB4 "Landing Pages que CONVERTEM! Os SEGREDOS de uma Landing Page campeã (2020) 🏆")  
+Fonte: https://rockcontent.com/blog/landing-page/
