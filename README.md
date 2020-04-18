@@ -1,4 +1,4 @@
-# Gama Experience
+# Gama Experience (6ª semana)
 ## Desafio: Página de Notícias do COVID-19
 
 Olá, olá!  
