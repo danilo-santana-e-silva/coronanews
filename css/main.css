@@ -21,6 +21,7 @@ header#cabecalho{
 }
 header#cabecalho > figure{
     align-items: center;
+    margin: 0px;
 }
 header#cabecalho > figure > h1{
     color: whitesmoke;
@@ -67,7 +68,7 @@ section#conteudo{
 }
 article.noticia{
     background-color: rgba(211, 211, 211, 0.95);
-    min-width: 50%;
+    min-width: inherit;
     margin: 5px 15px 15px 5px;
     padding: 10px;
     box-shadow: 10px 10px 5px grey;
@@ -76,8 +77,9 @@ article.noticia > figure img{
     width: 10%;
 }
 footer#rodape{
-    display: flex;
+
     justify-content: center;
+    text-align: center;
     padding:15px;
     background-color: #111;
     color: whitesmoke;
