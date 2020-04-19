@@ -1,6 +1,5 @@
 body{
     display: flex;
-    background-color: lightgray;
     margin: 0px;
     font-family: sans-serif;
 }
@@ -8,7 +7,7 @@ body{
 aside{
     width: 5%;
 }
-main{
+main#principal{
     width: 100%;
 }
 header#cabecalho{
@@ -18,9 +17,19 @@ header#cabecalho{
     align-items: center;
     padding-left: 15px;
     padding-right: 15px;
+    line-height: 40px;
 }
-header#cabecalho > h1{
+header#cabecalho > figure{
+    align-items: center;
+}
+header#cabecalho > figure > h1{
     color: whitesmoke;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+header#cabecalho > figure > img{
+    height: 40px;
 }
 nav#menu{
     height: 100%;
@@ -51,16 +60,25 @@ section#conteudo{
     display: flex;
     flex-wrap: wrap;
     width: 100%; 
-    background-color: blueviolet;
+    background-image: url(../img/1200px-SARS-CoV-2_without_background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 article.noticia{
-    background-color: azure;
+    background-color: rgba(211, 211, 211, 0.95);
     min-width: 50%;
-    margin:5px;
+    margin: 5px 15px 15px 5px;
     padding: 10px;
+    box-shadow: 10px 10px 5px grey;
+}
+article.noticia > figure img{
+    width: 10%;
 }
 footer#rodape{
     display: flex;
+    justify-content: center;
     padding:15px;
-    background-color: brown;
+    background-color: #111;
+    color: whitesmoke;
 }
