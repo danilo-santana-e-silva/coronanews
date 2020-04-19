@@ -94,6 +94,7 @@ article.noticia > div#youtube > iframe{
     width: 560px;
     max-width:100%;
 }
+
 article.noticia > p{
     text-indent: 1cm;
     line-height: 150%;
