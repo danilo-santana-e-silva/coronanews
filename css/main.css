@@ -1,10 +1,66 @@
 body{
-    display: inline;
+    display: flex;
+    background-color: lightgray;
+    margin: 0px;
+    font-family: sans-serif;
+}
+/*INFO: para habilitar aside, remover diplay:none, alterar width em main*/
+aside{
+    width: 5%;
 }
 main{
-    background-color: darkgray;
+    width: 100%;
 }
-aside{
-    background-color: aquamarine;
-    width: 15%;
+header#cabecalho{
+    display: flex;
+    background-color: #333;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+header#cabecalho > h1{
+    color: whitesmoke;
+}
+nav#menu{
+    height: 100%;
+}
+nav#menu > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav#menu > ul > li {
+    float: left;
+}
+nav#menu > ul > li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav#menu >  ul > li a:hover {
+    background-color: #111;
+}
+nav#menu >  ul > li a.ativo {
+    background-color: #111;
+}
+section#conteudo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; 
+    background-color: blueviolet;
+}
+article.noticia{
+    background-color: azure;
+    min-width: 50%;
+    margin:5px;
+    padding: 10px;
+}
+footer#rodape{
+    display: flex;
+    padding:15px;
+    background-color: brown;
 }
