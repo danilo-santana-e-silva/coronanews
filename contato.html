@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="icon" type="image/png" href="./img/favicon.png">
     <title>COVID-19</title>
+    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 
 <body>
@@ -30,7 +32,67 @@
         </header>
         <section id="conteudo">
             <article class="noticia">
-                <p>Contato</p>
+                <header>
+                    <h2>Entre em contato conosco!</h2>
+                </header>
+                <p>
+                    Se você está é jornalista tem conhecimentos de outras matérias relevantes quanto ao coronavirus, compatilhe conosco no formulário abaixo, vamos deixar sua matéria em destaque! ;) 
+                </p>
+                    
+                   <form id="contact">
+                    <div>
+                      <label for="form-name">Nome</label>
+                    <input id="form-name" type="text" />
+                    </div>
+                     <div>
+                      <label for="form-email">Email</label>
+                    <input id="form-email" type="text" />
+                    </div>
+                    <div>
+                      <label for="form-subject">Assunto</label>
+                    <input id="form-subject" type="text" />
+                    </div>
+                    <div>
+                      <label for="form-message">Menssagem:</label>
+                    <textarea id="form-message"></textarea>
+                    </div>
+                       <br>
+                      <button type="submit">Enviar!</button>
+                    </form>
+
+                    <script>
+                        const token = "dadd7912-75c1-4daa-8741-c4f40995d536";
+                        const $formContact = document.querySelector("#contact");
+
+                        const sendForm = event => {
+                          event.preventDefault();
+                          const message = {
+                            name: document.querySelector("#form-name").value,
+                            email: document.querySelector("#form-email").value,
+                            subject: document.querySelector("#form-subject").value,
+                            text: document.querySelector("#form-message").value
+                          };
+                          smtpJS(message);
+                        };
+                        const smtpJS = message => {
+                          try {
+                            Email.send(
+                              message.email,
+                              "corona.news.2020.br@gmail.com",
+                              `${message.name} - ${message.subject}`,
+                              message.text,
+                              { token }
+                            );
+                          } catch (e) {
+                            alert("Falha ao enviar menssagem.");
+                          }
+                        };
+
+                        $formContact.addEventListener("submit", sendForm);
+
+                    </script>
+              
+                
             </article>
         </section>
         <footer id="rodape">
@@ -43,4 +105,4 @@
     </aside>
 </body>
 
-</html>
+</html> 
